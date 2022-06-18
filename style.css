@@ -1,0 +1,217 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Joan", serif;
+  list-style: none;
+}
+/* About Me and foundation work */
+body {
+  background-image: url("pexels.jpg");
+  background-size: cover;
+}
+
+.topnavigation {
+  background-color: rgba(70, 72, 74, 0.61);
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.topnavigation a {
+  float: left;
+  color: rgba(10, 11, 10, 0.907);
+  text-align: center;
+  padding: 14px 16px;
+  font-size: 20px;
+  width: 25%;
+  font-weight: 600;
+  letter-spacing: 2px;
+  transition: 0.5s;
+}
+.topnavigation a:hover {
+  background-color: rgba(15, 17, 18, 0.767);
+  letter-spacing: 4px;
+  color: rgba(202, 202, 201, 0.842);
+}
+
+#central {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  position: relative;
+  padding-top: 40px;
+}
+.body-intro {
+  flex-basis: 50%;
+  min-width: 300px;
+}
+#central h2 {
+  color: #000000;
+  font-size: 77px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  letter-spacing: 2px;
+}
+.body-intro li span {
+  color: rgba(87, 71, 100, 0.907);
+}
+.bodyintro p {
+  color: hsla(44, 32%, 14%, 0.936);
+  line-height: 1.7;
+  font-size: 22px;
+  margin-bottom: 25px;
+  font-weight: 430;
+  letter-spacing: 1px;
+}
+.bodyhobbies {
+  color: hsla(44, 32%, 14%, 0.936);
+  line-height: 1.7;
+  font-size: 22px;
+  margin-bottom: 25px;
+  font-weight: 430;
+  letter-spacing: 0.2px;
+}
+.bodyhobbies h3 {
+  font-size: larger;
+  color: #000000;
+  letter-spacing: 1.5px;
+}
+.bodyhobbies {
+  align-items: center;
+  justify-content: center;
+  float: left;
+  padding: 30px;
+  border: #9e9b9b;
+  border-style: dashed none;
+  border-radius: 10px;
+  border-width: 2px;
+}
+img {
+  width: 500px;
+  height: fit-content;
+  border-width: 2px;
+  padding: 1px;
+  border-radius: 5px;
+  transform: scale(1.1);
+}
+
+.bodybtn p {
+  color: hsla(44, 32%, 14%, 0.936);
+  line-height: 1.7;
+  font-size: 26px;
+  font-weight: 400;
+  margin-left: 35px;
+  letter-spacing: 1.1px;
+}
+button {
+  margin-left: 35px;
+  padding: 10px 15px;
+  text-transform: uppercase;
+  background-color: rgba(47, 79, 79, 0.562);
+  font-size: 15px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-decoration: none;
+  transition: 0.5s;
+  border-radius: 5px;
+}
+button:hover {
+  letter-spacing: 2.2px;
+  background-color: rgba(15, 17, 18, 0.767);
+  font-size: 17px;
+  transition-duration: 0.4s;
+  color: rgba(202, 202, 201, 0.842);
+  transform: translateY(-5px);
+  cursor: pointer;
+}
+.footer {
+  position: relative;
+  text-align: center;
+  background: rgba(70, 72, 74, 0.61);
+  padding: 24px;
+}
+.footer p {
+  color: rgba(10, 11, 10, 0.907);
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+@media (max-width: 1000px) {
+  .topnavigation a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left;
+    transition: 0.2s;
+  }
+  #central {
+    display: block;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    position: relative;
+    padding-top: 20px;
+    transition: 0.2s;
+    margin-left: 20px;
+  }
+  img {
+    width: 480px;
+    height: 80vh;
+    border-width: 1px;
+    padding: 1px;
+    border-radius: 5px;
+    margin-left: 15px;
+    margin-top: 35px;
+    text-align: center;
+    order: 2;
+  }
+  .topnavigation {
+    width: 115%;
+  }
+  .footer {
+    width: 115%;
+  }
+}
+
+/* Contact me  */
+.grid form {
+  position: relative;
+}
+.grid form input,
+form textarea {
+  width: 25rem;
+  padding: 20px;
+  border: none;
+  outline: none;
+  background: #9e9b9b;
+  color: rgba(10, 11, 10, 0.907);
+  font-size: 17px;
+  font-weight: 550;
+  border-radius: 7px;
+  margin-bottom: 16px;
+}
+.grid form ::placeholder {
+  color: #000000aa;
+}
+.grid form label {
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.grid form textarea {
+  resize: none;
+  height: 193px;
+}
+#gender {
+  width: 25rem;
+  height: 3.5rem;
+  border: none;
+  border-radius: 7px;
+  outline: none;
+  background: #9e9b9b;
+  font-size: 17px;
+  font-weight: 550;
+}
